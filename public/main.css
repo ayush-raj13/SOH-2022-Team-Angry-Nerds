@@ -649,11 +649,6 @@ html {
   margin-right: 1.25rem;
 }
 
-.my-3{
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1201,10 +1196,6 @@ html {
   padding: 0.5rem;
 }
 
-.p-4{
-  padding: 1rem;
-}
-
 .p-6{
   padding: 1.5rem;
 }
@@ -1313,10 +1304,6 @@ html {
 
 .pr-4{
   padding-right: 1rem;
-}
-
-.pt-5{
-  padding-top: 1.25rem;
 }
 
 .pt-8{
