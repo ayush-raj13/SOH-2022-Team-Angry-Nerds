@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --primary: 244deg 38% 16%;
+        --secondary: 233deg 47% 7%;
+    }
+    html {
+        -webkit-tap-highlight-color: transparent;
+      }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="create.css">
+    
+    <title>Admin panel</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="title">Insurance</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        
+                        <div class="title">Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        
+                        <div class="title">Name</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        
+                        <div class="title">E-mail</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        
+                        <div class="title">Account Number</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        
+                        <div class="title">IFSC Code</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="top-bar">
+                <div class="search">
+                    
+                    <label for="search"><i class="fas fa-search"></i></label>
+                </div>
+                
+                <div class="user">
+                    <img src="./images/doctor1.jpg" alt="">
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">67</div>
+                        <div class="card-name">Total Applicants</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-brands fa-osi"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">105</div>
+                        <div class="card-name">Cases pending</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-light fa-loader"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">8</div>
+                        <div class="card-name">Cases Completed</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-badge-check"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">$4500</div>
+                        <div class="card-name">Money Released</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="tables">
+                <div class="last-appointments">
+                    <div class="heading">
+                        <h2>Last Appointments</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table class="appointments">
+                        <thead>
+                            <td>Name</td>
+                            <td>Email</td>
+                            <td>Account Number</td>
+                            <td>IFSC Code</td>
+                            <td>Actions</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Abhay</td>
+                                <td>abhay@gmail.com</td>
+                                <td>437783472523489</td>
+                                <td>ABCD1234567</td>
+                                <td>
+                                    <label for="cars">Choose Status</label>
+
+                                    <select name="status" id="status">
+                                      <option value="1">Pending</option>
+                                      <option value="2">Approved</option>
+                                      <option value="3">Money Released</option>
+                                      <option value="4">Money Received</option>
+                                    </select>
+                            </td>
+                            </tr>
+
+                            <tr>
+                                <td>Ayush Raj</td>
+                                <td>ayush@gmail.com</td>
+                                <td>732647157134887</td>
+                                <td>AAAA1111111111</td>
+                            <td>
+
+                                <label for="cars">Choose Status</label>
+
+                                    <select name="status">
+                                      <option value="1">Pending</option>
+                                      <option value="2">Approved</option>
+                                      <option value="3">Money Released</option>
+                                      <option value="4">Money Received</option>
+                                    </select>
+                           </td>
+                            
+                            </tr>
+
+                            <tr>
+                                <td>Ashutosh </td>
+                                <td>Ashutosh@gmail.com</td>
+                                <td>762829711132218</td>
+                                <td>BBBB4444444444</td>
+                                <td>
+
+                                    <label for="cars">Choose Status</label>
+
+                                    <select name="status">
+                                      <option value="1">Pending</option>
+                                      <option value="2">Approved</option>
+                                      <option value="3">Money Released</option>
+                                      <option value="4">Money Received</option>
+                                    </select>
+                                   </td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Baibhav</td>
+                                <td>Baibhav@gmail.com</td>
+                                <td>652643667287237</td>
+                                <td>SBIN000345363</td>
+                                <td>
+
+                                    <label for="cars">Choose Status</label>
+
+                                    <select name="status">
+                                      <option value="1">Pending</option>
+                                      <option value="2">Approved</option>
+                                      <option value="3">Money Released</option>
+                                      <option value="4">Money Received</option>
+                                    </select>
+                                   </td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="doctor-visiting">
+                    
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/0e8b068c07.js" crossorigin="anonymous"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="./create.js"></script>
+
+</body>
+
+</html>

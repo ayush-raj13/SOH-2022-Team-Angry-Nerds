@@ -1,0 +1,39 @@
+body {
+    background: -webkit-linear-gradient(25deg, #285430, #5F8D4E, #A4BE7B, #B6E2A1, #E5D9B6);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+    background-color: #8B7E74;
+   }
+
+h2 {
+    display: block;
+    font-size: 3em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color: #874C62;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+li {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color: #3F0071;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: max-content;
+    justify-content: center;
+    align-items: center;
+  }

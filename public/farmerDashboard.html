@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+      
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(219, 226, 226);
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .row {
+            background: white;
+            border-radius: 30px;
+            box-shadow: 12px 12px 22px grey;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            /* width: 500px; */
+            margin-bottom: 4px;
+        }
+
+        .btn1 {
+            border: none;
+            outline: none;
+            height: 50px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .btn1:hover {
+            background-color: white;
+            border: 1px solid;
+            color: black;
+        }
+
+        #a {
+            margin-bottom: 5px;
+        }
+
+        #b {
+            margin-top: 5px;
+        }
+
+        .progress-bar {
+            width: 50%;
+        }
+
+        .nav-link {
+            text-align: right;
+        }
+
+        .track-bar{
+            min-width: 98%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .track-item{
+            width: 50px
+        }
+
+        .status{
+            padding-bottom: 20px;
+        }
+
+        .contact-icons{
+            /* size: 10px; */
+            height: 55px;
+            width: 55px;
+            
+            
+        }
+        .text mail{
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="Form my-4 mx-5">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-lg-5">
+                        <img src="./images/dashboardImage.jpg"
+                            class="img-fluid mt-2 md-5" alt="">
+                    </div>
+                    <div class="col-lg-7">
+                        <h1 class="font-weight-bold py-3"> Welcome Abhay</h1>
+                        <form>
+                            <h3 class="col-lg-7 pd-2" id="a"> Name : <span class="name">Abhay</span></h3>
+                            <h3 class="col-lg-7 pd-2" id="b"> Mobile : 0123456789</h3>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <main3>
+        <section class="Form my-4 mx-5">
+            <div class="container">
+                <div class="row no-gutters">
+                    <!-- <div class="col-lg-5">
+                        <img src="download (2).jpg" class="img-fluid mt-5" alt="">
+                    </div> -->
+                    <div class="col-lg-15 status">
+                        <h1 class="font-weight-bold py-3">Application Status</h1>
+
+
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="track-bar" id="navbarNav">
+                                <div class="track-item">Not Initiated</div>
+                                <div class="track-item">Pending</div>
+                                <div class="track-item">Approved</div>
+                                <div class="track-item">Money Released</div>
+                                <div class="track-item">Money Received</div>
+                            </div>
+                        </nav>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main3>
+    <main2>
+        <section class="Form my-4 mx-5">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-lg-5">
+                        <img src="./images/dashboardContactUs.jpg" class="img-fluid mt-5" alt="">
+                    </div>
+                    <div class="col-lg-7">
+                        <h1 class="font-weight-bold py-3">Contact Us</h1>
+                        <a>
+                            <a href="mailto:ayushraj@iiit-bh.ac.in">
+                            <div>
+                                <img src="./images/gmail.png" class="contact-icons"><span class="text mail">Mail</span>
+                            </div>
+                        </a>
+                        <a href="callto:+916370019848">
+                            <div>
+                                <img src="./images/phone.png" class="contact-icons"><span class="text mail">Phone</span>
+                            </div>
+                            </a>
+                            <a href="https://twitter.com/baibhav_122003">
+                            <div>
+                                <img src="./images/twitter.png" class="contact-icons"><span class="text mail">Twitter</span>
+                            </div>
+                        </a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main2>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.6.8/firebase.js"></script>
+    <script src="./fetchStatus.js"></script>
+</body>
+
+</html>

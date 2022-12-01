@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+    <title>Crop Insurance</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <button id="open" class="lg:hidden absolute top-0 right-0 pt-[33px] pr-6">
+      <!-- <svg class="hover:opacity-0 hover:scale-150 transition-all duration-1000" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>  -->
+      <!-- <svg class="hover:opacity-0 hover:scale-150 transition-all duration-1000" enable-background="new 0 0 48 48" height="48px" id="Layer_3" version="1.1" viewBox="0 0 48 48" width="48px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect height="6" width="25" x="23"/><rect height="6" width="25" x="23" y="14"/><rect height="6" width="25" x="23" y="28"/><rect height="6" width="25" x="23" y="42"/><circle cx="18" cy="3" r="3"/><circle cx="18" cy="17" r="3"/><circle cx="18" cy="31" r="3"/><circle cx="18" cy="45" r="3"/><polygon points="0,48 4.07,48 13.092,0 9.021,0 "/></svg> -->
+      <svg class="hover:opacity-0 hover:scale-150 transition-all duration-1000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><linearGradient id="EIPc0qTNCX0EujYwtxKaXa" x1="12.066" x2="34.891" y1=".066" y2="22.891" gradientUnits="userSpaceOnUse"><stop offset=".237" stop-color="#3bc9f3"/><stop offset=".85" stop-color="#1591d8"/></linearGradient><path fill="url(#EIPc0qTNCX0EujYwtxKaXa)" d="M43,15H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,14.1,44.1,15,43,15z"/><linearGradient id="EIPc0qTNCX0EujYwtxKaXb" x1="12.066" x2="34.891" y1="12.066" y2="34.891" gradientUnits="userSpaceOnUse"><stop offset=".237" stop-color="#3bc9f3"/><stop offset=".85" stop-color="#1591d8"/></linearGradient><path fill="url(#EIPc0qTNCX0EujYwtxKaXb)" d="M43,27H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,26.1,44.1,27,43,27z"/><linearGradient id="EIPc0qTNCX0EujYwtxKaXc" x1="12.066" x2="34.891" y1="24.066" y2="46.891" gradientUnits="userSpaceOnUse"><stop offset=".237" stop-color="#3bc9f3"/><stop offset=".85" stop-color="#1591d8"/></linearGradient><path fill="url(#EIPc0qTNCX0EujYwtxKaXc)" d="M43,39H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,38.1,44.1,39,43,39z"/></svg>
+    </button>        
+  <!-- Glass Window -->
+  <div id="glass" class="lg:hidden hidden absolute top-0 right-0 flex flex-col top-0 h-screen w-[254px] z-20 bg-gray-600 bg-clip-padding bg-opacity-10"  style="backdrop-filter: blur(30px)">
+      <button id="close" class="absolute top-0 right-0 pt-[33px] pr-6">
+          <!-- <svg class="hover:opacity-0 hover:scale-150 transition-all duration-1000" xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>  -->
+          <!-- <svg class="hover:opacity-0 hover:scale-150 transition-all duration-1000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="64px" height="64px"><linearGradient id="fbsFAcPTNuInJg1GESjdha" x1="32" x2="32" y1="7.001" y2="56.998" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"/><stop offset="1" stop-color="#c822ff"/></linearGradient><path fill="url(#fbsFAcPTNuInJg1GESjdha)" d="M49.757,56.999c-0.768,0-1.536-0.292-2.121-0.877L32,40.485L16.364,56.121 c-1.17,1.169-3.073,1.169-4.243,0l-4.243-4.243c-1.17-1.17-1.17-3.073,0-4.243L23.515,32L7.879,16.364 c-1.17-1.17-1.17-3.073,0-4.243l4.243-4.243c1.169-1.17,3.072-1.171,4.243,0L32,23.515L47.636,7.879c1.17-1.171,3.073-1.17,4.243,0 l4.243,4.243c1.17,1.17,1.17,3.073,0,4.243L40.485,32l15.636,15.636c1.17,1.17,1.17,3.073,0,4.243l-4.243,4.243 C51.293,56.706,50.525,56.999,49.757,56.999z M32,37.657l17.05,17.05c0.39,0.39,1.025,0.389,1.415,0l4.243-4.243 c0.39-0.39,0.39-1.024,0-1.415L37.657,32l17.05-17.05c0.39-0.39,0.39-1.024,0-1.415l-4.243-4.243c-0.39-0.39-1.025-0.391-1.415,0 L32,26.343L14.95,9.293c-0.39-0.39-1.025-0.389-1.415,0l-4.243,4.243c-0.39,0.39-0.39,1.024,0,1.415L26.343,32L9.293,49.05 c-0.39,0.39-0.39,1.024,0,1.415l4.243,4.243c0.389,0.389,1.024,0.39,1.415,0L32,37.657z"/><linearGradient id="fbsFAcPTNuInJg1GESjdhb" x1="32" x2="32" y1="11.94" y2="52.06" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"/><stop offset="1" stop-color="#e6abff"/></linearGradient><path fill="url(#fbsFAcPTNuInJg1GESjdhb)" d="M52.061 14.061L49.939 11.939 32 29.879 14.061 11.939 11.939 14.061 29.879 32 11.939 49.939 14.061 52.061 32 34.121 49.939 52.061 52.061 49.939 34.121 32z"/></svg> -->
+          <svg class="hover:opacity-0 hover:scale-150 transition-all duration-1000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 40 40" width="40px" height="40px"><path fill="#dff0fe" d="M21 24.15L8.857 36.293 4.707 32.143 16.85 20 4.707 7.857 8.857 3.707 21 15.85 33.143 3.707 37.293 7.857 25.15 20 37.293 32.143 33.143 36.293z"/><path fill="#4788c7" d="M33.143,4.414l3.443,3.443L25.15,19.293L24.443,20l0.707,0.707l11.436,11.436l-3.443,3.443 L21.707,24.15L21,23.443l-0.707,0.707L8.857,35.586l-3.443-3.443L16.85,20.707L17.557,20l-0.707-0.707L5.414,7.857l3.443-3.443 L20.293,15.85L21,16.557l0.707-0.707L33.143,4.414 M33.143,3L21,15.143L8.857,3L4,7.857L16.143,20L4,32.143L8.857,37L21,24.857 L33.143,37L38,32.143L25.857,20L38,7.857L33.143,3L33.143,3z"/></svg>
+        </button>
+      <!-- Navigation Buttons -->
+      <div class="flex flex-col mt-32 space-y-6 width-full">
+          <a class="pl-6 font-barlow-condensed text-white tracking-widest border-r-4 border-white" href=""><b>00</b> HOME</a>
+          <a class="pl-6 font-barlow-condensed text-white tracking-widest hover:border-r-4 hover:border-slate-600" href="./loginSignup.html"><b>01</b> Farmer</a>
+          <a class="pl-6 font-barlow-condensed text-white tracking-widest hover:border-r-4 hover:border-slate-600" href="./loginSignup.html"><b>02</b> Insurance Company</a>
+          <a class="pl-6 font-barlow-condensed text-white tracking-widest hover:border-r-4 hover:border-slate-600" href="./loginSignup.html"><b>03</b> Government</a>
+      </div>
+  </div>
+  <!-- Navigation Bar -->
+  <div class="absolute top-0 right-0 hidden lg:mt-10 lg:flex space-x-12 lg:space-x-16 px-16 lg:pr-44 lg:pl-32 bg-emerald-600 bg-clip-padding bg-opacity-40 z-30"  style="backdrop-filter: blur(30px)">
+      <a class="py-8 border-b-4 border-white font-lexend-deca leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-black" href=""><b class="hidden lg:inline-block">00</b> Home</a>
+      <a class="py-8 hover:border-b-4 border-[#5F8D4E] font-lexend-deca leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href="./loginSignup.html"><b class="hidden lg:inline-block">01</b> Farmer</a>
+      <a class="py-8 hover:border-b-4 border-[#5F8D4E] font-lexend-deca leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href="./loginSignup.html"><b class="hidden lg:inline-block">02</b> Insurance Company</a>
+      <a class="py-8 hover:border-b-4 border-[#5F8D4E] font-lexend-deca leading-[16.8px] lg:leading-[19.2px] tracking-wide text-[14px] lg:text-base text-white" href="./loginSignup.html"><b class="hidden lg:inline-block">03</b> Government</a>
+  </div>
+  <div id="google_translate_element" class="absolute"></div>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    function googleTranslateElementInit(){
+      new google.translate.TranslateElement(
+        {pageLanguage:'en'},
+        'google_translate_element'
+      );
+    }
+  </script>
+  <marquee class="pt-6 text-xl font-extrabold lg:pt-8 text-red-700 font-inter absolute mt-72 lg:mt-[400px]">NOTICE: The Server will be down for maintainance until further notice.</marquee>
+    <main
+      class="py-44 lg:py-60 flex flex-col space-y-32 min-h-screen items-center justify-center bg-teal-700 text-center font-lexend-deca text-sm font-normal text-white/75 lg:text-left bg-[url('./images/background.jpg')] bg-cover bg-center bg-no-repeat bg-blend-screen bg-scroll"
+    >
+      <div>
+        <h1 class="text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-yellow-400 from-orange-400">Pradhan Mantri</span> Fasal Bima<span class="text-transparent bg-clip-text bg-gradient-to-l to-teal-600 from-lime-600"> Yojana</span></h1>
+        <p class="pb-4 lg:pb-8 pt-4 lg:pt-8 text-xl font-bold text-gray-900 md:text-2xl lg:text-3xl text-center text-black">Ministry of Agriculture and Farmers Welfare</p>
+      </div>
+
+      <div
+        class="mb-48 lg:mb-0 relative top-8 lg:top-32 mx-4 flex max-w-sm flex-col rounded-lg bg-[#5F8D4E] lg:max-w-6xl lg:flex-row"
+      >
+        <div
+          class="flex mb-8 rounded-t-lg bg-white brightness-150 lg:order-2 lg:mb-0 lg:w-2/4 lg:rounded-r-lg lg:rounded-tl-none"
+        >
+          <img
+            src="images/background.jpg"
+            alt="three people sitting at a desk with a computer"
+            class="rounded-t-lg lg:rounded-r-lg lg:rounded-tl-none items-center select-none"
+          />
+        </div>
+        <div class="lg:w-1/2 lg:pl-16 lg:pt-16">
+          <h1
+            class="mx-auto mb-4 w-72 font-inter text-3xl font-bold text-white lg:mx-0 lg:mb-8 lg:w-4/5 lg:text-4xl lg:leading-snug"
+          >
+            Get <span class="text-[#395144] font-bold">Insurance</span> claims settled at your
+            finger tips.
+          </h1>
+          <p class="mx-auto mb-8 w-64 lg:mx-0 lg:mb-16 lg:w-2/3">
+            Crop Insurance is an integrated IT solution and a web-based ecosystem to speed up service delivery, unify fragmented databases, achieve a single view of data, and eliminate manual processes. Crop Insurance provides insurance services to farmers faster than before.
+          </p>
+          <p class="mx-auto mb-8 w-64 lg:mx-0 lg:mb-16 lg:w-2/3">
+            The Government is endeavouring for the integration of all the stakeholders viz. farmers, insurance companies, financial institutions & Government agencies on single IT platform. This will ensure better administration, coordination & transparency for getting real time information and monitoring.
+          </p>
+          <div
+            class="mb-8 flex flex-col space-y-4 lg:w-2/3 lg:flex-row lg:justify-between lg:space-y-0"
+          >
+            <div>
+              <span
+                class="font-inter text-2xl font-bold text-white lg:mb-2 lg:block"
+                >500+</span
+              >
+              <p class="uppercase text-white/60">Pending</p>
+            </div>
+            <div>
+              <span
+                class="font-inter text-2xl font-bold text-white lg:mb-2 lg:block"
+                >2k+</span
+              >
+              <p class="uppercase text-white/60">Rejected</p>
+            </div>
+            <div>
+              <span
+                class="font-inter text-2xl font-bold text-white lg:mb-2 lg:block"
+                >50k+</span
+              >
+              <p class="uppercase text-white/60">Approved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <main2 class="py-44 lg:py-60 flex flex-col space-y-32 min-h-screen items-center justify-center bg-teal-700 text-center font-lexend-deca text-sm font-normal text-white/75 lg:text-left bg-[url('./images/background1.jpg')] bg-cover bg-center bg-no-repeat bg-blend-screen bg-scroll">
+      
+        <h1 class="flex items-center text-5xl font-extrabold dark:text-black">Settled and Rejected Cases<span class="bg-blue-100 text-blue-800 text-2xl font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">GRAPH</span></h1>
+
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" defer></script>
+
+        <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css);
+        </style>
+
+
+        <div class="bg-emerald-900 text-gray-500 rounded shadow-xl py-5 px-5 w-full lg:w-1/2" x-data="{chartData:chartData()}" x-init="chartData.fetch()">
+            <div class="flex flex-wrap items-end">
+                <div class="flex-1">
+                    <h3 class="text-lg font-semibold leading-tight">Total Funds Released</h3>
+                </div>
+                <div class="relative" @click.away="chartData.showDropdown=false">
+                    <button class="text-xs hover:text-gray-300 h-6 focus:outline-none" @click="chartData.showDropdown=!chartData.showDropdown">
+                        <span x-text="chartData.options[chartData.selectedOption].label"></span><i class="ml-1 mdi mdi-chevron-down"></i>
+                    </button>
+                    <div class="bg-gray-700 shadow-lg rounded text-sm absolute top-auto right-0 min-w-full w-32 z-30 mt-1 -mr-3" x-show="chartData.showDropdown" style="display: none;" x-transition:enter="transition ease duration-300 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease duration-300 transform" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4">
+                        <span class="absolute top-0 right-0 w-3 h-3 bg-gray-700 transform rotate-45 -mt-1 mr-3"></span>
+                        <div class="bg-gray-700 rounded w-full relative z-10 py-1">
+                            <ul class="list-reset text-xs">
+                                <template x-for="(item,index) in chartData.options">
+                                    <li class="px-4 py-2 hover:bg-gray-600 hover:text-white transition-colors duration-100 cursor-pointer" :class="{'text-white':index==chartData.selectedOption}" @click="chartData.selectOption(index);chartData.showDropdown=false">
+                                        <span x-text="item.label"></span>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-end mb-5">
+                <h4 class="text-2xl lg:text-3xl text-white font-semibold leading-tight inline-block mr-2" x-text="'$'+(chartData.data?chartData.data[chartData.date].total.comma_formatter():0)">0</h4>
+                <span class="inline-block" :class="chartData.data&&chartData.data[chartData.date].upDown<0?'text-red-500':'text-green-500'"><span x-text="chartData.data&&chartData.data[chartData.date].upDown<0?'▼':'▲'">0</span> <span x-text="chartData.data?chartData.data[chartData.date].upDown:0">0</span>%</span>
+            </div>
+            <div>
+                <canvas id="chart" class="w-full"></canvas>
+            </div>
+        </div>
+
+    </main2>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/20d3085d82/bhubaneswar/" data-label_1="BHUBANESWAR" data-label_2="WEATHER" data-theme="original" >BHUBANESWAR WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+    <!-- Required chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
